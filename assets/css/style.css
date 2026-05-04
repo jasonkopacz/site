@@ -447,7 +447,12 @@ h3 { font-size: 19px; }
   filter: blur(24px);
 }
 
-.about-text h2 { margin-bottom: 18px; }
+.about-text h2 {
+  margin-bottom: 18px;
+  line-height: 1.15;
+  min-height: 3.45em;
+  min-height: calc(3 * 1lh);
+}
 .about-text p  {
   color: var(--text-muted);
   font-size: 17px;
@@ -458,9 +463,6 @@ h3 { font-size: 19px; }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-}
-.about-text-secondary {
-  padding-top: 34px;
 }
 
 
@@ -908,6 +910,9 @@ h3 { font-size: 19px; }
   .about-grid {
     grid-template-columns: 1fr;
     gap: 44px;
+  }
+  .about-text h2 {
+    min-height: unset;
   }
   .about-image {
     max-width: 280px;

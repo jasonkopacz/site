@@ -66,6 +66,12 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+  const aboutTitles = document.querySelectorAll('#about .about-text h2');
+  if (aboutTitles.length === 2) {
+    const heights = [...aboutTitles].map((h) => Math.round(h.getBoundingClientRect().height));
+    console.log('[jasonkopacz.com] about paired blurbs — title block heights (px)', heights, heights[0] === heights[1] ? '(matched)' : '(diff)');
+  }
+
   const projectImgs = document.querySelectorAll('#projects .project-card .project-image img');
   console.log('[jasonkopacz.com] project screenshots', projectImgs.length, [...projectImgs].map((img) => img.getAttribute('src')));
 
