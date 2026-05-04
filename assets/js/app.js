@@ -66,6 +66,8 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Run once on load
+  const projectImgs = document.querySelectorAll('#projects .project-card .project-image img');
+  console.log('[jasonkopacz.com] project screenshots', projectImgs.length, [...projectImgs].map((img) => img.getAttribute('src')));
+
   onScroll();
 })();

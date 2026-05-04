@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jason Kopacz — Full Stack Software Engineer building at the intersection of technology and environmental impact.">
+  <meta name="description" content="Jason Kopacz — AI Engineer, Platform Engineer, and Full Stack Software Engineer with 5+ years building production systems.">
   <title>Jason Kopacz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,11 +57,14 @@
   </div>
 
   <div class="container hero-content">
+    <div class="hero-headshot">
+      <img src="images/headshot.jpg" alt="Jason Kopacz headshot" width="220" height="220">
+    </div>
     <p class="hero-eyebrow">Hey, I'm</p>
     <h1 class="hero-name">Jason Kopacz</h1>
-    <p class="hero-role">Full Stack Software Engineer</p>
+    <p class="hero-role">AI Engineer · Platform Engineer · Full Stack Engineer</p>
     <p class="hero-desc">
-      Building at the intersection of <strong>technology</strong> and <strong>environmental impact</strong>.
+      <strong>5+ years</strong> building full-stack and platform systems <strong>2+ years</strong> shipping AI workflow solutions.
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">View my work</a>
@@ -78,18 +81,14 @@
 <section id="about" class="section">
   <div class="container">
     <div class="about-grid">
-      <div class="about-image reveal">
-        <img src="images/headshot.jpg" alt="Jason Kopacz" width="480" height="480">
-        <div class="about-image-glow" aria-hidden="true"></div>
-      </div>
 
       <div class="about-text">
         <p class="section-label reveal">About me</p>
-        <h2 class="reveal">Full Stack Engineer with a principle of daily learning</h2>
+        <h2 class="reveal">5+ years building full-stack platforms and data systems</h2>
         <p class="reveal">
-          I've worked across the stack with JavaScript, React, Ruby on Rails, Python, AWS, and more.
-          Previously a Watershed Ambassador for the NJDEP, I'm driven by a career at the intersection
-          of environmentalism and software engineering.
+          I build full-stack web applications, backend services, and data pipelines that power production products.
+          My work covers API design, database architecture, ETL and data flow reliability, cloud infrastructure,
+          and frontend systems that deliver fast, maintainable user experiences.
         </p>
         <div class="about-links reveal">
           <a href="https://github.com/jasonkopacz" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
@@ -106,6 +105,16 @@
           </a>
         </div>
       </div>
+
+      <div class="about-text about-text-secondary">
+        <p class="section-label reveal">AI solutions</p>
+        <h2 class="reveal">2+ years building AI workflows for business teams</h2>
+        <p class="reveal">
+          I design and ship AI workflow solutions that reduce manual work across operations, support, and internal tooling.
+          This includes LLM-powered automations, retrieval and prompt pipelines, and AI integrations that turn
+          business processes into reliable, measurable workflow systems teams use every day.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -114,21 +123,14 @@
 <section id="projects" class="section section-alt">
   <div class="container">
     <div class="section-header reveal">
-      <p class="section-label">Personal Projects</p>
-      <h2>Things I've built</h2>
+      <p class="section-label">Featured Engineering Work</p>
+      <h2>AI, platform, and full-stack systems</h2>
     </div>
 
     <div class="projects-grid">
 
       <!-- Carbon Grid — featured -->
       <article class="project-card project-featured reveal">
-        <div class="project-preview pp-green" aria-hidden="true">
-          <div class="pp-grid"></div>
-          <div class="pp-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <div class="pp-label">Carbon Grid</div>
-        </div>
         <div class="project-info">
           <div class="project-tags">
             <span>Next.js</span>
@@ -138,23 +140,26 @@
             <span>Redis</span>
           </div>
           <h3>Carbon Grid</h3>
-          <p>Real-time electricity grid carbon intensity tracker. Search 500+ grid zones across 100+ countries to view live CO₂ emissions, energy mix breakdowns, and historical trends — with Redis-cached results for instant performance.</p>
+          <p>Production-style full-stack platform for real-time grid intelligence. It serves low-latency data across 500+ zones in 100+ countries with caching, reliable API orchestration, and analytics-ready emissions and energy mix insights.</p>
           <a href="https://github.com/jasonkopacz/Carbon" target="_blank" rel="noopener" class="project-link">
             View on GitHub
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
         </div>
+        <div class="project-media">
+          <div class="project-image project-image-main">
+            <img src="images/projects/carbon/carbon.png" alt="Carbon Grid app search and live grid data interface" loading="lazy" width="1400" height="921">
+          </div>
+          <div class="project-gallery project-gallery--two">
+            <div class="project-image project-image-thumb">
+              <img src="images/projects/carbon/carbon-forecast.png" alt="Carbon Grid region detail with forecast chart" loading="lazy" width="1400" height="801">
+            </div>
+          </div>
+        </div>
       </article>
 
       <!-- AQI -->
       <article class="project-card reveal">
-        <div class="project-preview pp-sky" aria-hidden="true">
-          <div class="pp-grid"></div>
-          <div class="pp-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
-          </div>
-          <div class="pp-label">AQI</div>
-        </div>
         <div class="project-info">
           <div class="project-tags">
             <span>Rust</span>
@@ -163,23 +168,26 @@
             <span>Axum</span>
           </div>
           <h3>AQI — Global Air Quality</h3>
-          <p>Full-stack Rust web app with real-time air quality data for any location. Features geolocation, pollutant breakdowns, and weather conditions via the WAQI API.</p>
+          <p>High-performance full-stack application focused on real-time environmental data delivery. Built in Rust with location-aware querying, data normalization, and a UI designed for fast interpretation of air quality and forecast signals.</p>
           <a href="https://jasonkopacz.github.io/AQI/" target="_blank" rel="noopener" class="project-link">
             View Live
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
         </div>
+        <div class="project-media">
+          <div class="project-gallery project-gallery--aqi">
+            <div class="project-image project-image-thumb">
+              <img src="images/projects/aqi/aqi.png" alt="AQI dashboard with city summary and trend chart" loading="lazy" width="1400" height="920">
+            </div>
+            <div class="project-image project-image-thumb">
+              <img src="images/projects/aqi/aqi-calendar.png" alt="AQI daily forecast and pollutant conditions view" loading="lazy" width="1400" height="743">
+            </div>
+          </div>
+        </div>
       </article>
 
       <!-- Osmosis — featured -->
       <article class="project-card project-featured reveal">
-        <div class="project-preview pp-indigo" aria-hidden="true">
-          <div class="pp-grid"></div>
-          <div class="pp-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          </div>
-          <div class="pp-label">Osmosis</div>
-        </div>
         <div class="project-info">
           <div class="project-tags">
             <span>TypeScript</span>
@@ -189,33 +197,30 @@
             <span>Stripe</span>
           </div>
           <h3>Osmosis</h3>
-          <p>A Chrome extension that passively teaches you a new language as you browse. It replaces a configurable percentage of words on any page with their translations — hover to reveal the original. Backed by a Cloudflare Workers API with Azure translation, D1 database caching, and Stripe subscriptions.</p>
+          <p>AI-powered language learning product that combines client-side UX with platform-grade backend services. The extension and API pipeline handle adaptive translation, caching, billing, and performance at scale across the browser experience.</p>
           <a href="https://github.com/jasonkopacz/osmosis" target="_blank" rel="noopener" class="project-link">
             View on GitHub
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
           </a>
         </div>
+        <div class="project-media">
+          <div class="project-image project-image-main">
+            <img src="images/projects/osmosis/marquee.png" alt="Osmosis project landing visual and branding" loading="lazy" width="1400" height="901" class="osmosis-marquee">
+          </div>
+          <div class="project-gallery project-gallery--three">
+            <div class="project-image project-image-thumb">
+              <img src="images/projects/osmosis/dropdown.png" alt="Osmosis language dropdown in extension popup" loading="lazy" width="1400" height="901">
+            </div>
+            <div class="project-image project-image-thumb">
+              <img src="images/projects/osmosis/spanish.png" alt="Osmosis popup settings showing word replacement controls" loading="lazy" width="1400" height="901">
+            </div>
+          </div>
+          <div class="project-image project-image-full">
+            <img src="images/projects/osmosis/example.png" alt="Osmosis translated content example on a web page" loading="lazy" width="1600" height="320">
+          </div>
+        </div>
       </article>
 
-      <!-- State Carbon Emissions -->
-      <article class="project-card reveal">
-        <div class="project-image">
-          <img src="images/usa.png" alt="US State Carbon Emissions choropleth map" loading="lazy" width="600" height="400">
-        </div>
-        <div class="project-info">
-          <div class="project-tags">
-            <span>Observable</span>
-            <span>D3.js</span>
-            <span>GIS</span>
-          </div>
-          <h3>State Carbon Emissions</h3>
-          <p>Choropleth map visualizing greenhouse gas emissions by US state in billions of tons.</p>
-          <a href="https://observablehq.com/@jason-kopacz-ws/ghg" target="_blank" rel="noopener" class="project-link">
-            View Project
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
-          </a>
-        </div>
-      </article>
 
     </div>
   </div>
@@ -225,16 +230,15 @@
 <section id="velvet" class="section">
   <div class="container">
     <div class="section-header reveal">
-      <p class="section-label">Freelance</p>
+      <p class="section-label">Platform + Product Delivery</p>
       <h2>Velvet — Web Development Studio</h2>
-      <p class="section-sub reveal">Custom websites for small businesses. No templates, no page builders — every site is built from scratch.</p>
+      <p class="section-sub reveal">I build conversion-focused web platforms for businesses with modern architecture, strong performance, and maintainable codebases.</p>
     </div>
 
     <!-- Velvet brand card -->
     <article class="velvet-hero reveal">
-      <div class="velvet-hero-preview" aria-hidden="true">
-        <div class="pp-grid"></div>
-        <div class="velvet-hero-wordmark">velvet</div>
+      <div class="velvet-hero-preview">
+        <img src="images/velvet/velvet-marketing-site.png" alt="Velvet web studio marketing homepage" loading="lazy" width="1400" height="712">
       </div>
       <div class="velvet-hero-info">
         <div class="project-tags">
@@ -244,10 +248,14 @@
           <span>Framer Motion</span>
           <span>MDX</span>
         </div>
-        <h3>The Velvet Website</h3>
-        <p>The studio's own marketing site — built with Next.js 14 and MDX. Features a case study portfolio, services, pricing, and blog. Designed to convert small business owners looking for a custom web presence.</p>
+        <h3>Velvet</h3>
+        <p>Studio platform built with Next.js and MDX to showcase services, case studies, and packaged offerings. Structured for scale, fast iteration, and measurable conversion outcomes.</p>
       </div>
     </article>
+
+    <div class="velvet-extra reveal">
+      <img src="images/velvet/velvet-case-studies.png" alt="Velvet studio website portfolio and case studies" loading="lazy" width="1400" height="959">
+    </div>
 
     <!-- Client sites grid -->
     <div class="client-grid">
@@ -377,8 +385,8 @@
 <section id="skills" class="section">
   <div class="container">
     <div class="section-header reveal">
-      <p class="section-label">Toolkit</p>
-      <h2>Technologies I work with</h2>
+      <p class="section-label">Engineering Toolkit</p>
+      <h2>Technologies I use to ship production systems</h2>
     </div>
 
     <div class="skills-grid reveal">
@@ -415,12 +423,28 @@
         <span>PostgreSQL</span>
       </div>
       <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" aria-hidden="true" width="40" height="40" style="filter:brightness(0) invert(1)">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" aria-hidden="true" width="40" height="40" class="skill-icon-invert">
         <span>AWS</span>
       </div>
       <div class="skill-item">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/redux/redux-original.svg" alt="" aria-hidden="true" width="40" height="40">
-        <span>Redux</span>
+        <img src="images/skills/claude-code.svg" alt="" aria-hidden="true" width="40" height="40" class="skill-icon-invert">
+        <span>Claude Code</span>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/codex.svg" alt="" aria-hidden="true" width="40" height="40" class="skill-icon-invert">
+        <span>Codex</span>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/deepseek.svg" alt="" aria-hidden="true" width="40" height="40">
+        <span>DeepSeek</span>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/temporal.svg" alt="" aria-hidden="true" width="40" height="40" class="skill-icon-invert">
+        <span>Temporal</span>
+      </div>
+      <div class="skill-item">
+        <img src="images/skills/n8n.svg" alt="" aria-hidden="true" width="40" height="40">
+        <span>n8n</span>
       </div>
       <div class="skill-item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/redis/redis-original.svg" alt="" aria-hidden="true" width="40" height="40">
@@ -447,12 +471,12 @@
   <div class="container">
     <div class="contact-inner reveal">
       <p class="section-label">Contact</p>
-      <h2>Let's build something together</h2>
+      <h2>Let’s build your next AI-enabled platform</h2>
       <p class="contact-desc">
-        Whether you have a project in mind, want to collaborate, or just want to say hi —
-        my inbox is always open.
+        I partner with teams building AI products, developer platforms, and full-stack applications.
+        If you need an engineer who can own architecture and execution end-to-end, let’s talk.
       </p>
-      <a href="mailto:jtkopacz@gmail.com" class="btn btn-primary btn-lg">
+      <a href="https://www.linkedin.com/in/jason-kopacz-2917264a/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
         Say hello
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
       </a>
