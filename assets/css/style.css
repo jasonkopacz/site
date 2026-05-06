@@ -590,12 +590,54 @@ h3 { font-size: 19px; }
 }
 
 .project-info h3 { margin-bottom: 8px; }
+
+.project-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+.project-brand-logo {
+  width: min(88px, 22vw);
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 8px;
+}
+.project-brand-title {
+  flex: 1;
+  min-width: 0;
+}
+.project-brand-title .section-label {
+  margin-bottom: 6px;
+}
+.project-brand-title h3 {
+  margin-bottom: 0;
+  font-size: clamp(18px, 2.5vw, 21px);
+}
+
+.project-gallery--leadfinder {
+  grid-template-columns: 1fr;
+}
+
 .project-info p  {
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.6;
   flex: 1;
   margin-bottom: 20px;
+}
+
+.project-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 22px;
+  margin-top: auto;
+}
+.project-links-row .project-link {
+  margin-top: 0;
 }
 
 .project-link {
@@ -607,6 +649,9 @@ h3 { font-size: 19px; }
   color: var(--accent-light);
   margin-top: auto;
   transition: gap var(--t) var(--ease), color var(--t) var(--ease);
+}
+.project-link-secondary {
+  color: var(--text-muted);
 }
 .project-link:hover {
   gap: 9px;

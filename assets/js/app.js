@@ -3,7 +3,7 @@
   const mobileToggle = document.getElementById('mobileToggle');
   const mobileMenu   = document.getElementById('mobileMenu');
   const navLinks     = document.querySelectorAll('.nav-links a');
-  const sections     = document.querySelectorAll('section[id]');
+  const sections     = document.querySelectorAll('section[id], #website-fetcher');
 
   // Nav: frosted glass on scroll
   const onScroll = () => {
@@ -16,7 +16,10 @@
   const highlightNav = () => {
     const y = window.scrollY + 100;
     sections.forEach(sec => {
-      if (y >= sec.offsetTop && y < sec.offsetTop + sec.offsetHeight) {
+      const rect = sec.getBoundingClientRect();
+      const top = rect.top + window.scrollY;
+      const bottom = top + rect.height;
+      if (y >= top && y < bottom) {
         const id = sec.id;
         navLinks.forEach(a => {
           a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
