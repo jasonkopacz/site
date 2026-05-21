@@ -533,6 +533,16 @@ h3 { font-size: 19px; }
 .project-gallery--three {
   grid-template-columns: repeat(3, 1fr);
 }
+.project-gallery--popup {
+  grid-template-columns: repeat(3, 1fr);
+}
+.project-gallery--popup .project-image {
+  height: auto;
+}
+.project-gallery--popup .project-image img {
+  object-fit: contain;
+  height: auto;
+}
 .project-gallery--aqi {
   grid-template-columns: repeat(2, 1fr);
 }
